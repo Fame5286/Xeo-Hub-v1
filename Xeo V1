@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("XEO Hub V1", "DarkTheme")
 local Tab = Window:NewTab("MAIN")
 local Section = Tab:NewSection("Auto Farm")
-Section:NewToggle("open", "ToggleInfo", function(state)
+Section:NewToggle("open/close", "ToggleInfo", function(state)
     _G. Teleport = state
 while _G. Teleport do wait ()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442047.90625, 2.9980247020721436, 0.0880584716796875)
@@ -13,7 +13,7 @@ end)
 ----
 
 local Section = Tab:NewSection("Auto click")
-Section:NewToggle("open", "ToggleInfo", function(state)
+Section:NewToggle("open/close", "ToggleInfo", function(state)
 _G.Auto = state
 while _G.Auto do wait()
     game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click:InvokeServer()
@@ -22,18 +22,3 @@ end)
 
 ----
 
-local Section = Tab:NewSection("Auto open egg 7.5k")
-Section:NewToggle("open", "ToggleInfo", function(state)
-_G. Open = state
-while _G. Open do wait ()
-wait(.4)
-local args = {
-    [1] = "Pro01",
-    [2] = "Auto",
-    [3] = {}
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
-
-       end
-end)
