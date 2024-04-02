@@ -9,3 +9,21 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442047.
 wait(.9)
         end
 end)
+
+----
+
+local Section = Tab:NewSection("Auto open egg 7.5k")
+Section:NewToggle("Auto open egg 7.5k", "ToggleInfo", function(state)
+_G. Open = state
+while _G. Open do wait ()
+wait(.4)
+local args = {
+    [1] = "Pro01",
+    [2] = "Auto",
+    [3] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
+
+       end
+end)
