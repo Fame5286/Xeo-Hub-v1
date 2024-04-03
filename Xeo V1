@@ -39,7 +39,7 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "Spin",
+    Name = "FARM",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -65,7 +65,46 @@ end
 
 ----
 
+Tab:AddToggle({
+    Name = "Spin 50K",
+    Default = false,
+    Callback = function(Value)
+ _G. Open = Value
+while _G. Open do wait ()
+wait(.0)
+local args = {
+    [1] = "Pro02",
+    [2] = "Auto",
+    [3] = {}
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
+
+     end
+end
+})
+
+----
+Tab:AddToggle({
+    Name = "Spin 5K",
+    Default = false,
+    Callback = function(Value)
+	_G. Open = Value
+while _G. Open do wait ()
+wait(.0)
+	local args = {
+    [1] = "Pro03",
+    [2] = "Auto",
+    [3] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
+
+ end
+end
+})
+
+----
 
 
 
