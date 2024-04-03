@@ -39,7 +39,7 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "FARM",
+    Name = "Spin",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
