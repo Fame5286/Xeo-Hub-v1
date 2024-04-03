@@ -1,11 +1,11 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("XEO Hub V1", "DarkTheme")
+local Window = Library.CreateLib("Xeo Hub V1", "DarkTheme")
 local Tab = Window:NewTab("MAIN")
 local Section = Tab:NewSection("Auto Farm")
 Section:NewToggle("open/close", "ToggleInfo", function(state)
     _G. Teleport = state
 while _G. Teleport do wait ()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442047.90625, 2.9980247020721436, 0.0880584716796875)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442061.25, 2.9980247020721436, 8.44399642944336)
 wait(.9)
         end
 end)
