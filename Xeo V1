@@ -38,11 +38,16 @@ end
 
 ----
 
-Tab:AddToggle({
-    Name = "Spin 5k",
-    Default = false,
-    Callback = function(Value)
-        _G. Open = true
+local Tab = Window:MakeTab({
+    Name = "Spin",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "spin 7.5K",
+	Callback = function(Value)
+      		print(_G. Open = Value
 while _G. Open do wait ()
 wait(.0)
 local args = {
@@ -53,9 +58,10 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
 
-     end
-end
+end")
+  	end    
 })
+
 
 ----
 
