@@ -45,7 +45,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddToggle({
-    Name = "Spin 5K",
+    Name = "Spin 7.5K",
     Default = false,
     Callback = function(Value)
         _G. Open = Value
