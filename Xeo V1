@@ -14,11 +14,13 @@ Tab:AddToggle({
     Name = "AUTO FARM",
     Default = false,
     Callback = function(Value)
+    pcall(function()
         _G. Teleport = Value 
 while _G. Teleport do wait ()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442760.75, 2.9980247020721436, 10.704609870910645)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442061.25, 2.9980247020721436, 8.44399642944336)
 wait(.9)
         end
+    end)
 end
 })
 
@@ -39,7 +41,7 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "Spin",
+    Name = "SPIN",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -86,7 +88,7 @@ end
 
 ----
 Tab:AddToggle({
-    Name = "Spin 200K",
+    Name = "Spin 5K",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
