@@ -39,7 +39,7 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "FARM",
+    Name = "Spin",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -86,7 +86,7 @@ end
 
 ----
 Tab:AddToggle({
-    Name = "Spin 5K",
+    Name = "Spin 200K",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
