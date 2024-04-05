@@ -123,19 +123,19 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "Teleport",
+    Name = "TELEPORT",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 Tab:AddToggle({
-    Name = "Teleport to home PORTAL",
+    Name = "TELEPORT TO Home PORTAL",
     Default = false,
     Callback = function(Value)
     _G. word = Value
 while _G. word do wait ()
 local args = {
-    [1] = "Space",
+    [1] = "Home",
     [2] = false
 }
 
@@ -148,7 +148,7 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "Teleport to Event PORTAL",
+    Name = "TELEPORT TO Event PORTAL",
     Default = false,
     Callback = function(Value)
     _G. word = Value
@@ -167,7 +167,7 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "Teleport to Ocean PORTAL",
+    Name = "TELEPORT TO OCEAN PORTAL",
     Default = false,
     Callback = function(Value)
      _G. word = Value
@@ -186,7 +186,7 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "Teleport to Space PORTAL",
+    Name = "TELEPORT TO SPACE PORTAL",
     Default = false,
     Callback = function(Value)
 _G. word = Value
@@ -205,7 +205,7 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "Teleport to Candy PORTAL",
+    Name = "TELEPORT TO CANDY PORTAL",
     Default = false,
     Callback = function(Value)
 _G. word = Value
