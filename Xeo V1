@@ -17,8 +17,8 @@ Tab:AddToggle({
     pcall(function()
         _G. Teleport = Value 
 while _G. Teleport do wait ()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442147.875, 2.9980247020721436, -22.046775817871094)
-wait(.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442061.25, 2.9980247020721436, 8.44399642944336)
+wait(.7)
         end
     end)
 end
@@ -40,6 +40,20 @@ end
 
 ----
 
+Tab:AddToggle({
+    Name = "AUTO W",
+    Default = false,
+    Callback = function(Value)
+        _G.Auto = Value
+while _G.Auto do wait()
+game:GetService("VirtualInputManager"):SendKeyEvent(true,119,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+        end
+end
+})
+
+
+----
+
 local Tab = Window:MakeTab({
     Name = "SPIN",
     Icon = "rbxassetid://4483345998",
@@ -47,7 +61,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddToggle({
-    Name = "Spin 7.5K",
+    Name = "SPIN 7.5K",
     Default = false,
     Callback = function(Value)
         _G. Open = Value
@@ -68,7 +82,7 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "Spin 50K",
+    Name = "SPIN 50K",
     Default = false,
     Callback = function(Value)
  _G. Open = Value
@@ -88,7 +102,7 @@ end
 
 ----
 Tab:AddToggle({
-    Name = "Spin 200K",
+    Name = "SPIN 5K",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
