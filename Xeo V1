@@ -116,11 +116,106 @@ wait(.0)
 
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
 
- end
+    end
 end
 })
 
 ----
+
+local Tab = Window:MakeTab({
+    Name = "Teleport",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddToggle({
+    Name = "Teleport to home PORTAL",
+    Default = false,
+    Callback = function(Value)
+    _G. word = Value
+while _G. word do wait ()
+local args = {
+    [1] = "Space",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WorldService"):WaitForChild("RF"):WaitForChild("Travel"):InvokeServer(unpack(args))
+
+     end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "Teleport to Event PORTAL",
+    Default = false,
+    Callback = function(Value)
+    _G. word = Value
+while _G. word do wait ()
+local args = {
+    [1] = "Event",
+    [2] = false,
+    [3] = "Event"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WorldService"):WaitForChild("RF"):WaitForChild("Travel"):InvokeServer(unpack(args))
+    end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "Teleport to Ocean PORTAL",
+    Default = false,
+    Callback = function(Value)
+     _G. word = Value
+while _G. word do wait ()
+local args = {
+    [1] = "Ocean",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WorldService"):WaitForChild("RF"):WaitForChild("Travel"):InvokeServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "Teleport to Space PORTAL",
+    Default = false,
+    Callback = function(Value)
+_G. word = Value
+while _G. word do wait ()
+local args = {
+    [1] = "Space",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WorldService"):WaitForChild("RF"):WaitForChild("Travel"):InvokeServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "Teleport to Candy PORTAL",
+    Default = false,
+    Callback = function(Value)
+_G. word = Value
+while _G. word do wait ()
+
+   end
+end
+})
+
+
 
 
 
