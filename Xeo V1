@@ -5,7 +5,7 @@ local Window = OrionLib:MakeWindow({Name = "Xeo Hub V1", HidePremium = false, Sa
 
 
 local Tab = Window:MakeTab({
-    Name = "FARM",
+    Name = "AUTO FARM",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -31,7 +31,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.Auto = Value
-while _G.Auto do wait()
+while _G.Auto task wait()
     game:GetService("ReplicatedStorage").Packages.Knit.Services.ClickService.RF.Click:InvokeServer()
 
         end
@@ -45,7 +45,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.Auto = Value
-while _G.Auto do wait()
+while _G.Auto task wait()
 game:GetService("VirtualInputManager"):SendKeyEvent(true,119,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
         end
 end
@@ -58,7 +58,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
 _G.Auto = Value
-while _G.Auto do wait ()
+while _G.Auto task wait ()
 game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("RebirthService"):WaitForChild("RF"):WaitForChild("Rebirth"):InvokeServer()
 
        end
@@ -68,11 +68,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "AUTO EQUIPBEST PET",
+    Name = "AUTO EQUIPBEST PETS",
     Default = false,
     Callback = function(Value)
 _G.Auto = Value
-while _G.Auto do wait ()
+while _G.Auto task wait ()
     game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PetsService"):WaitForChild("RF"):WaitForChild("EquipBest"):InvokeServer()
       end
 end
@@ -81,29 +81,30 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "AUTO CRAFT ALL PET",
+    Name = "AUTO CRAFT ALL PETS",
     Default = false,
     Callback = function(Value)
 _G.Auto = Value
-while _G.Auto do wait ()
+while _G.Auto task wait ()
     game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PetsService"):WaitForChild("RF"):WaitForChild("CraftAll"):InvokeServer()
      end
 end
 })
+
 ----
 
 local Tab = Window:MakeTab({
-    Name = "SPIN EGG",
+    Name = "AUTO OPEN EGG",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
 Tab:AddToggle({
-    Name = "SPIN 7.5K HOME WORD",
+    Name = "OPEN EGG 7.5K WIN",
     Default = false,
     Callback = function(Value)
         _G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Pro01",
@@ -120,11 +121,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 50K HOME WORD",
+    Name = "OPEN EGG 50K WIN",
     Default = false,
     Callback = function(Value)
  _G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Pro02",
@@ -141,11 +142,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 200K HOME WORD",
+    Name = "OPEN EGG 200K WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 	local args = {
     [1] = "Pro03",
@@ -162,11 +163,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 50K Flower win",
+    Name = "OPEN EGG 50K FLOWER WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Spring Egg",
@@ -183,32 +184,13 @@ end
 
 ----
 
+
 Tab:AddToggle({
-    Name = "SPIN 50K space word",
+    Name = "OPEN EGG 200K WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
-wait(.0)
-local args = {
-    [1] = "Pro02",
-    [2] = "1",
-    [3] = {}
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("Open"):InvokeServer(unpack(args))
-    end
-end
-})
-
-----
-
-Tab:AddToggle({
-    Name = "SPIN 200K space word",
-    Default = false,
-    Callback = function(Value)
-	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Pro03",
@@ -224,11 +206,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 850K space word",
+    Name = "OPEN EGG 850K WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Pro04",
@@ -244,11 +226,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 2.5M space word",
+    Name = "OPEN EGG 2.5M WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Space01",
@@ -264,11 +246,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 5M Ocean word",
+    Name = "OPEN 5M WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Ocean01",
@@ -284,11 +266,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 7.5M Candy word",
+    Name = "OPEN EGG 7.5M WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Candy01",
@@ -305,11 +287,11 @@ end
 ----
 
 Tab:AddToggle({
-    Name = "SPIN 15M Hell word",
+    Name = "OPEN EGG 15M WIN",
     Default = false,
     Callback = function(Value)
 	_G. Open = Value
-while _G. Open do wait ()
+while _G. Open task wait ()
 wait(.0)
 local args = {
     [1] = "Hell01",
@@ -336,7 +318,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
     _G. word = Value
-while _G. word do wait ()
+while _G. word task wait ()
 local args = {
     [1] = "Home",
     [2] = false
@@ -355,7 +337,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
     _G. word = Value
-while _G. word do wait ()
+while _G. word task wait ()
 local args = {
     [1] = "Event",
     [2] = false,
@@ -374,7 +356,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
      _G. word = Value
-while _G. word do wait ()
+while _G. word task wait ()
 local args = {
     [1] = "Ocean",
     [2] = false
@@ -393,7 +375,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
 _G. word = Value
-while _G. word do wait ()
+while _G. word task wait ()
 local args = {
     [1] = "Space",
     [2] = false
@@ -412,7 +394,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
 _G. word = Value
-while _G. word do wait ()
+while _G. word task wait ()
 local args = {
     [1] = "Candy",
     [2] = false
@@ -430,7 +412,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
 _G. word = Value
-while _G. word do wait ()
+while _G. word task wait ()
     local args = {
         [1] = "Hell",
         [2] = false
