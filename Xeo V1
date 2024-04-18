@@ -412,7 +412,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
 _G. word = Value
-while _G. word task wait ()
+while _G. word do task wait ()
     local args = {
         [1] = "Hell",
         [2] = false
