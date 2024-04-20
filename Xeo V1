@@ -18,9 +18,9 @@ Tab:AddToggle({
     Callback = function(Value)
     pcall(function()
         _G. Teleport = Value 
-while _G. Teleport do wait ()
+while _G. Teleport do wait (.7)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-443551.46875, 3.7921993732452393, 0)
-wait(.8)
+wait(.9)
         end
     end)
 end
